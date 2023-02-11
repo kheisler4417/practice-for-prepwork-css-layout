@@ -4,26 +4,28 @@
         <link rel="stylesheet" type="text/css" href="layout.css">
     </head>
     <body>
-        <form action="/form-handling-url" method="post">
+        <form class="theForm" action="/form-handling-url" method="post">
             <fieldset>
             <legend>Add user</legend>
-        
-            <div>
+
+        <div class="grid-container">
+
+            <div class="grid-item item1">
                 <label for="firstName">First name</label>
                 <input type="text" id="firstName" name="first_name">
             </div>
-        
-            <div>
+
+            <div class="grid-item item2">
                 <label for="lastName">Last name</label>
                 <input type="text" id="lastName" name="last_name">
             </div>
-        
-            <div>
+
+            <div class="grid-item item3">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email_address">
             </div>
-        
-            <div>
+
+            <div class="grid-item item4">
                 <label for="role">Status</label>
                 <select id="role" name="user_role_name">
                 <option value="student">Student</option>
@@ -31,33 +33,46 @@
                 <option value="guest">Guest</option>
                 </select>
             </div>
-            
-            <div>
-                <p>Choose your favorite Web language:</p>
+
+            <div class="grid-item item5">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <div class="grid-item item6a">
+                <label>Choose your favorite Web language:</label>
+            </div>
+
+            <div class="grid-item item6b">
                 <input type="radio" id="html" name="fav_language" value="HTML">
                 <label for="html">HTML</label><br>
                 <input type="radio" id="css" name="fav_language" value="CSS">
                 <label for="css">CSS</label><br>
                 <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label>
+                <label for="javascript">JS</label>
             </div>
 
-            <div>
+            <div class="grid-item item7">
                 <label for="comments">Comments</label>
                 <textarea id="comments" name="comments"></textarea>
             </div>
 
-            <div>
+            <div class="grid-item item8a">
                 <input type="checkbox" id="signup" name="signup" value="Signup">
-                <label for="signup">Sign up for news letter</label><br>
-                <input type="checkbox" id="terms" name="terms" value="Terms">
-                <label for="terms"> Agree to terms and conditions</label>
+                <label for="signup">Sign up <br> for news</label><br>
             </div>
-        
-            <div>
+
+            <div class="grid-item item8b">
+                <input type="checkbox" id="terms" name="terms" value="Terms">
+                <label for="terms"> Agree to <br> terms</label>
+            </div>
+
+            <div class="grid-item item9">
                 <button type="submit">Submit</button>
             </div>
-        
+
+        </div>
+
             </fieldset>
         </form>
     </body>
